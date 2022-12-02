@@ -19,12 +19,6 @@ function rollSecondDice() {
     }
 
 function rollBoth() {
-    var randomNumberOne = Math.floor(Math.random() * 6) + 1;
-    let getImgDice1 = 'images/dice' + randomNumberOne + '.png';
-    document.querySelectorAll('img')[0].setAttribute("src", getImgDice1);
-    
-    var randomNumberTwo = Math.floor(Math.random() * 6) + 1;
-    let getImgDice2 = 'images/dice' + randomNumberTwo + '.png';
-    document.querySelectorAll('img')[1].setAttribute("src", getImgDice2);
-
+    rollFirstDice();
+    rollSecondDice();
 }
